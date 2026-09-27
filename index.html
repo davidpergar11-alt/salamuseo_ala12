@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MUSEO DEL ALA 12</title>
-  <meta name="description" content="Museo del Ala 12 — historia y exposiciones de la aviación española. Sitio provisional listo para GitHub Pages." />
+  <meta name="description" content="Museo del Ala 12 — historia y exposiciones de la aviación española. Sitio preparado para GitHub Pages." />
   <!-- Favicon placeholder: coloca /assets/favicon.ico -->
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -44,7 +44,7 @@
       <div class="hero-content">
         <h2 id="hero-title" class="hero-title">MUSEO DEL ALA 12</h2>
         <p class="hero-subtitle">Un recorrido inmersivo por la historia de la aviación militar española. (Texto provisional)</p>
-        <p class="hero-note">Reemplaza la imagen de fondo en <code>/assets/hero.jpg</code> con una imagen autorizada.</p>
+        <p class="hero-note">Reemplaza la imagen de fondo en <code>/assets/hero.svg</code> con una imagen autorizada.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#historia" id="explore-btn">Explorar el museo</a>
           <a class="btn btn-ghost" href="#sala-sabre">Ver salas</a>
@@ -83,7 +83,7 @@
       <div class="rooms-grid">
         <!-- Sala Sabre/F-104 -->
         <article id="sala-sabre" class="room-card" tabindex="0" aria-labelledby="sabre-title">
-          <div class="room-hero" style="background-image:url('assets/salas/sabre.jpg')">
+          <div class="room-hero" style="background-image:url('assets/salas/sabre.svg')">
             <h4 id="sabre-title">Sala Sabre / F-104</h4>
           </div>
           <div class="room-body">
@@ -96,7 +96,7 @@
 
         <!-- Sala F-4C -->
         <article id="sala-f4" class="room-card" tabindex="0" aria-labelledby="f4-title">
-          <div class="room-hero" style="background-image:url('assets/salas/f4.jpg')">
+          <div class="room-hero" style="background-image:url('assets/salas/f4.svg')">
             <h4 id="f4-title">Sala F-4C</h4>
           </div>
           <div class="room-body">
@@ -109,7 +109,7 @@
 
         <!-- Sala F-18 -->
         <article id="sala-f18" class="room-card" tabindex="0" aria-labelledby="f18-title">
-          <div class="room-hero" style="background-image:url('assets/salas/f18.jpg')">
+          <div class="room-hero" style="background-image:url('assets/salas/f18.svg')">
             <h4 id="f18-title">Sala F-18</h4>
           </div>
           <div class="room-body">
@@ -122,7 +122,7 @@
 
         <!-- Sala Miscelánea -->
         <article id="sala-misc" class="room-card" tabindex="0" aria-labelledby="misc-title">
-          <div class="room-hero" style="background-image:url('assets/salas/misc.jpg')">
+          <div class="room-hero" style="background-image:url('assets/salas/misc.svg')">
             <h4 id="misc-title">Sala Miscelánea</h4>
           </div>
           <div class="room-body">
@@ -140,6 +140,7 @@
       <h3 id="resenas-title">Reseñas</h3>
       <p class="lead">Invitamos a los visitantes a dejar una reseña. Las reseñas no se guardan permanentemente en este sitio estático.</p>
 
+      <!-- Si quieres integrar Formspree: añade action="https://formspree.io/f/XXXXXXX" method="POST" -->
       <form id="review-form" class="review-form" novalidate>
         <label for="review-name">Nombre</label>
         <input id="review-name" name="name" type="text" required aria-required="true" placeholder="Tu nombre" />
