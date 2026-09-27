@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071827"/>
+      <stop offset="1" stop-color="#174b70"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="650" cy="100" r="90" fill="#6bc5ff" opacity=".16"/>
+  <path d="M90 260 L340 220 L590 130 L700 150 L470 260 L700 340 L590 350 L340 285 L90 290 Z"
+        fill="#dceeff" opacity=".9"/>
+  <path d="M330 225 L400 120 L430 125 L395 235 Z" fill="#b7cfe3"/>
+  <text x="40" y="55" fill="#f7d976" font-family="Arial" font-size="30"
+        letter-spacing="4">SALA SABRE / F-104</text>
+  <text x="40" y="405" fill="#ffffff" font-family="Arial" font-size="20">
+    Imagen provisional
+  </text>
+</svg>
