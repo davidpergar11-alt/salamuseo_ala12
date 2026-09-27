@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061827"/>
+      <stop offset="0.55" stop-color="#123d63"/>
+      <stop offset="1" stop-color="#d0312d"/>
+    </linearGradient>
+    <linearGradient id="runway" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#40566b"/>
+      <stop offset="1" stop-color="#07111c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1220" cy="260" r="130" fill="#f7d976" opacity=".7"/>
+  <path d="M0 590 L1600 450 L1600 900 L0 900 Z" fill="url(#runway)"/>
+  <path d="M640 900 L810 500 L960 500 L1130 900 Z" fill="#1b2a38" opacity=".8"/>
+  <path d="M780 850 L810 730 L840 730 L870 850 Z" fill="#f7d976" opacity=".8"/>
+
+  <!-- Silueta decorativa de avión, reemplazable por una imagen autorizada -->
+  <g transform="translate(690 320) rotate(-8)" fill="#dceeff">
+    <path d="M0 45 L200 30 L335 0 L350 15 L235 55 L350 105 L335 120 L200 75 L0 65 Z"/>
+    <path d="M110 42 L170 -55 L195 -55 L185 40 Z"/>
+    <path d="M110 67 L170 150 L195 150 L185 69 Z"/>
+  </g>
+
+  <text x="80" y="120" fill="#ffffff" font-family="Arial, sans-serif"
+        font-size="42" letter-spacing="8">IMAGEN PROVISIONAL</text>
+  <text x="80" y="175" fill="#d9eaff" font-family="Arial, sans-serif"
+        font-size="24">Sustituir por fotografía autorizada</text>
+</svg>
