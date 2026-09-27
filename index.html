@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MUSEO DEL ALA 12</title>
+  <meta name="description" content="Museo del Ala 12 — historia y exposiciones de la aviación española. Sitio provisional listo para GitHub Pages." />
+  <!-- Favicon placeholder: coloca /assets/favicon.ico -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="brand">
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <h1 class="site-title">MUSEO DEL ALA 12</h1>
+      </div>
+
+      <nav class="site-nav" role="navigation" aria-label="Menú principal">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#historia" data-target="historia" class="nav-link">Historia</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" aria-expanded="false">Salas ▾</button>
+            <ul class="dropdown" aria-label="Salas del museo">
+              <li><a href="#sala-sabre" data-target="sala-sabre" class="nav-link">Sala Sabre / F-104</a></li>
+              <li><a href="#sala-f4" data-target="sala-f4" class="nav-link">Sala F-4C</a></li>
+              <li><a href="#sala-f18" data-target="sala-f18" class="nav-link">Sala F-18</a></li>
+              <li><a href="#sala-misc" data-target="sala-misc" class="nav-link">Sala Miscelánea</a></li>
+            </ul>
+          </li>
+          <li><a href="#resenas" data-target="resenas" class="nav-link">Reseñas</a></li>
+          <li><a href="#contacto" data-target="contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero / Portada -->
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h2 id="hero-title" class="hero-title">MUSEO DEL ALA 12</h2>
+        <p class="hero-subtitle">Un recorrido inmersivo por la historia de la aviación militar española. (Texto provisional)</p>
+        <p class="hero-note">Reemplaza la imagen de fondo en <code>/assets/hero.jpg</code> con una imagen autorizada.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#historia" id="explore-btn">Explorar el museo</a>
+          <a class="btn btn-ghost" href="#sala-sabre">Ver salas</a>
+        </div>
+      </div>
+      <!-- Radar / luces decorativas -->
+      <div class="radar" aria-hidden="true"></div>
+      <canvas id="radar-canvas" class="radar-canvas" aria-hidden="true"></canvas>
+    </section>
+
+    <!-- Historia -->
+    <section id="historia" class="panel" tabindex="0" aria-labelledby="historia-title">
+      <h3 id="historia-title">Historia</h3>
+      <p class="lead">Texto provisional: Aquí se incluirá la historia verificada del Ala 12 y del museo. No se proporcionan hechos ni fechas inventadas. Sustituye este texto por información comprobada.</p>
+
+      <div class="timeline" id="timeline">
+        <p class="timeline-note">Cronología interactiva: rellena con fechas y descripciones verificadas. Los elementos siguientes son ejemplos provisionales sin fechas.</p>
+        <ul>
+          <li class="timeline-item">
+            <button class="timeline-toggle">Evento 1 <span class="muted">(fecha pendiente)</span></button>
+            <div class="timeline-body">Descripción provisional. Reemplaza con contenido verificado. Añade fotografías en <code>/assets/history/</code>.</div>
+          </li>
+          <li class="timeline-item">
+            <button class="timeline-toggle">Evento 2 <span class="muted">(fecha pendiente)</span></button>
+            <div class="timeline-body">Descripción provisional. No inventar operaciones ni fechas.</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Salas -->
+    <section id="salas" class="panel" aria-labelledby="salas-title">
+      <h3 id="salas-title">Salas del museo</h3>
+      <p class="lead">Cada sala tiene su propia página/entrada dentro de esta sección. Los textos y fotografías son provisionales y fácilmente editables.</p>
+
+      <div class="rooms-grid">
+        <!-- Sala Sabre/F-104 -->
+        <article id="sala-sabre" class="room-card" tabindex="0" aria-labelledby="sabre-title">
+          <div class="room-hero" style="background-image:url('assets/salas/sabre.jpg')">
+            <h4 id="sabre-title">Sala Sabre / F-104</h4>
+          </div>
+          <div class="room-body">
+            <p class="room-intro">Introducción provisional sobre la sala. No inventar datos sobre piezas reales del museo.</p>
+            <div class="card-actions">
+              <button class="open-piece" data-room="sabre">Ver piezas</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sala F-4C -->
+        <article id="sala-f4" class="room-card" tabindex="0" aria-labelledby="f4-title">
+          <div class="room-hero" style="background-image:url('assets/salas/f4.jpg')">
+            <h4 id="f4-title">Sala F-4C</h4>
+          </div>
+          <div class="room-body">
+            <p class="room-intro">Texto provisional. Sustituir por descripciones verificadas.</p>
+            <div class="card-actions">
+              <button class="open-piece" data-room="f4">Ver piezas</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sala F-18 -->
+        <article id="sala-f18" class="room-card" tabindex="0" aria-labelledby="f18-title">
+          <div class="room-hero" style="background-image:url('assets/salas/f18.jpg')">
+            <h4 id="f18-title">Sala F-18</h4>
+          </div>
+          <div class="room-body">
+            <p class="room-intro">Texto provisional. Mantener fuentes verificables antes de publicar datos.</p>
+            <div class="card-actions">
+              <button class="open-piece" data-room="f18">Ver piezas</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sala Miscelánea -->
+        <article id="sala-misc" class="room-card" tabindex="0" aria-labelledby="misc-title">
+          <div class="room-hero" style="background-image:url('assets/salas/misc.jpg')">
+            <h4 id="misc-title">Sala Miscelánea</h4>
+          </div>
+          <div class="room-body">
+            <p class="room-intro">Sala para piezas varias y objetos de apoyo. Añade fichas reales en el formato mostrado.</p>
+            <div class="card-actions">
+              <button class="open-piece" data-room="misc">Ver piezas</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section id="resenas" class="panel" aria-labelledby="resenas-title">
+      <h3 id="resenas-title">Reseñas</h3>
+      <p class="lead">Invitamos a los visitantes a dejar una reseña. Las reseñas no se guardan permanentemente en este sitio estático.</p>
+
+      <form id="review-form" class="review-form" novalidate>
+        <label for="review-name">Nombre</label>
+        <input id="review-name" name="name" type="text" required aria-required="true" placeholder="Tu nombre" />
+
+        <label for="review-text">Reseña</label>
+        <textarea id="review-text" name="review" rows="5" required aria-required="true" placeholder="Escribe tu reseña (no publiques información clasificada)"></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Enviar reseña</button>
+          <button type="reset" class="btn btn-ghost">Limpiar</button>
+        </div>
+
+        <p class="review-note">Nota: Este sitio es estático. Para almacenar reseñas de forma permanente integra un servicio externo (ej. Formspree, Netlify Forms o una API). Ver README para detalles.</p>
+      </form>
+
+      <section id="reviews-list" aria-live="polite" class="reviews-list">
+        <h4>Reseñas recientes (sesión)</h4>
+        <div id="reviews-container">
+          <!-- Reseñas añadidas en sesión aparecerán aquí -->
+        </div>
+      </section>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="panel contact-panel" aria-labelledby="contacto-title">
+      <h3 id="contacto-title">Contacto</h3>
+      <p class="lead">Correo oficial: <a href="mailto:oficomala12_ea@mde.es" id="contact-email">oficomala12_ea@mde.es</a></p>
+
+      <div class="contact-content">
+        <div class="contact-left">
+          <p>Para consultas sobre visitas, horarios y autorización de imágenes, envía un correo a la dirección anterior.</p>
+          <a class="btn btn-primary" href="mailto:oficomala12_ea@mde.es">Enviar correo</a>
+        </div>
+        <div class="contact-right">
+          <!-- Animación de avión: imagen provisional en /assets/plane.svg -->
+          <div class="airstrip" aria-hidden="true">
+            <div class="sunset"></div>
+            <div class="plane-wrap">
+              <img src="assets/plane.svg" alt="Ilustración de avión (sustituible)" class="plane" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="contact-note">La animación del avión es CSS/JS provisional. Reemplaza la imagen en <code>/assets/plane.svg</code> por una autorizada.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p>&copy; Museo del Ala 12 — Contenido provisional. No contiene datos clasificados.</p>
+      <p>Diseño futurista — Plantilla lista para GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- Modal para fichas de piezas / galería -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-inner" role="document">
+      <button class="modal-close" aria-label="Cerrar">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
